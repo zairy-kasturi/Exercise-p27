@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	//declare
+	int a, b, sum, diff;
+  
+	//ask user
+	cout << "plz enter 2 inputs : " << endl;
+	cin >> a >> b;
+  
+	//process
+	sum = a + b;
+	diff = a - b;
+  
+	//selection : output
+	if (sum > diff)
+		cout << "sum is : " << sum;
+	else
+		cout << "diff is : " << diff;
+}
