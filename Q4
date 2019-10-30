@@ -1,0 +1,31 @@
+// ConsoleApplication16.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main()
+{
+	//declare
+	double mass, height, BMI;
+
+	//ask user to enter input
+	cout << "plz enter mass in kg : ";
+	cin >> mass;
+	cout << "plz enter height in meter : ";
+	cin >> height;
+
+	//process
+	BMI = mass / pow(height, 2);
+
+	//selection output
+	if (BMI >= 18.5 && BMI <= 25)
+		cout << "Your BMI is : " << BMI << ".Result is Optimal" << endl;
+	else if (BMI < 18.5)
+		cout << "Your BMI is : " << BMI << ".Result is UnderWeight" << endl;
+	else 
+	cout << "Your BMI is : " << BMI << ".Result is Overweight" << endl;
+
+}
