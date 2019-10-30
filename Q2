@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	//declare
+	int steps,minutes,seconds;
+	double feet=0,miles=0;
+	//ask input
+	cout << "How many step per minutes :  " << endl;
+	cin >> steps;
+
+	cout << "duration time in minutes and second" << endl;
+	cin >> minutes >> seconds;
+
+	//process 
+	//get feet per sec
+	feet =  ((minutes * 60) + seconds) *steps/60;
+	//miles per hours
+	miles = feet*2.5/5280;
+
+	//output
+	cout << fixed << setprecision(2) << endl;
+	cout << "Miles he has run is : " << miles << endl;
+
+}
