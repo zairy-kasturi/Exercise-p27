@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	//declare 
+	double celcius,fahrenheit;
+
+	//ask input
+	cout << "plz enter temperature in celcius :  " << endl;
+	cin >> celcius;
+
+	//process
+	fahrenheit = 32 + (9 * celcius / 5);
+	cout << fixed << setprecision(2) << endl;
+  
+  //output
+	cout << "Temperature in Celcius  is : " << celcius << endl;
+	cout << "Temperature in Fahrenheit  is : " << fahrenheit << endl;
+
+
+}
