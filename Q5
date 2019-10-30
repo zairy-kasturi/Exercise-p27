@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//declare
+	int num,ttlngtive=0,ttlpstive=0;
+
+	//input : range -100 until 100
+	cout << "plz enter input in range -100 until 100"<<endl;
+	cin >> num;
+
+	//repeation
+	while (num != 0) {
+		if (num < 0)
+		ttlngtive += 1;
+		else
+		ttlpstive += 1;
+
+		//ask input again
+		cin >> num;
+	}
+	cout << "Total negative number is : " << ttlngtive << endl;
+	cout << "Total positive number is : " << ttlpstive << endl;
+}
